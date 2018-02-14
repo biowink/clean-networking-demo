@@ -1,25 +1,35 @@
-//
-//  ViewController.swift
-//  CleanNetworkArchitecture
-//
-//  Created by Martin Höller on 08.02.18.
-//  Copyright © 2018 Clue. All rights reserved.
-//
-
 import UIKit
+import CleanBackend
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, DataStorageDelegate {
+    private var dataStorage = DataStorage()
+    private var postsRequest: ForumPostsRequest?
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var userIdTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        updateResults()
+        dataStorage.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func fetchPosts() {
+        let config = RequestConfiguration(baseUrl: URL(string: "https://jsonplaceholder.typicode.com")!)
+        let client = HTTPClient(configuration: config)
+        postsRequest = ForumPostsRequest(client: client,
+                                    eventListenerFactory: FetchedPostsEventListenerFactory(dataStorage: dataStorage))
+        
+        let userId = Int(userIdTextField.text ?? "")
+        postsRequest?.fetchPosts(userId: userId)
     }
-
-
+    
+    func dataStorageDidStorePosts() {
+        updateResults()
+    }
+    
+    private func updateResults() {
+        resultLabel.text = "\(dataStorage.posts.count) posts"
+    }
 }
-
