@@ -1,24 +1,24 @@
 import Foundation
 
 protocol DataStorageDelegate: class {
-    func dataStorageDidStorePosts()
+    func dataStorageDidStoreForumPosts()
 }
 
-class DataStorage {
-    var posts = [Post]()
+final class DataStorage {
+    var forumPosts = [ForumPost]()
     weak var delegate: DataStorageDelegate?
     
-    func storePosts(fromDictionaries dictionaries: [[String: Any]]) {
-        posts.removeAll()
+    func storeForumPosts(fromDictionaries dictionaries: [[String: Any]]) {
+        forumPosts.removeAll()
         
         for dict in dictionaries {
-            if let post = Post(dictionary: dict) {
-                posts.append(post)
+            if let post = ForumPost(dictionary: dict) {
+                forumPosts.append(post)
             }
         }
         
         DispatchQueue.main.async {
-            self.delegate?.dataStorageDidStorePosts()
+            self.delegate?.dataStorageDidStoreForumPosts()
         }
     }
 }

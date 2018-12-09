@@ -1,11 +1,3 @@
-//
-//  CleanNetworkArchitectureTests.swift
-//  CleanNetworkArchitectureTests
-//
-//  Created by Martin Höller on 08.02.18.
-//  Copyright © 2018 Clue. All rights reserved.
-//
-
 import XCTest
 @testable import CleanNetworkArchitecture
 

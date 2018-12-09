@@ -1,11 +1,11 @@
-struct Post {
-    let userId: Int
+struct ForumPost {
+    let authorId: Int
     let postId: Int
     let title: String
     let body: String
     
-    init(userId: Int, postId: Int, title: String, body: String) {
-        self.userId = userId
+    init(authorId: Int, postId: Int, title: String, body: String) {
+        self.authorId = authorId
         self.postId = postId
         self.title = title
         self.body = body
@@ -13,7 +13,7 @@ struct Post {
     
     init?(dictionary: [String: Any]) {
         guard
-            let userId = dictionary["userId"] as? Int,
+            let authorId = dictionary["userId"] as? Int,
             let postId = dictionary["id"] as? Int,
             let title = dictionary["title"] as? String,
             let body = dictionary["title"] as? String
@@ -21,6 +21,6 @@ struct Post {
                 return nil
         }
         
-        self.init(userId: userId, postId: postId, title: title, body: body)
+        self.init(authorId: authorId, postId: postId, title: title, body: body)
     }
 }
