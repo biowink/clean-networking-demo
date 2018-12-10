@@ -53,7 +53,7 @@ final class FetchForumPostsRequestTests: XCTestCase {
     func test_successfulRequest_sendsEventWithParsedResponse() {
         let data = TestUtils.data(fromFile: "10_mocked_posts_response", withExtension: "json")
         sut.success(response: data)
-        let event = mockListenerFactory.listener.lastEvent as? FetchedForumPostsEvent
+        let event = mockListenerFactory.listener.lastEvent as? FetchedForumPostsSuccessEvent
         XCTAssertEqual(10, event?.forumPosts.count)
     }
 

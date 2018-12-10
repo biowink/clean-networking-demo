@@ -21,7 +21,7 @@ final class StoreFetchedForumPostsEventListener: RequestEventListening {
     }
     
     func notify(_ event: RequestEvent) {
-        if let fetchedEvent = event as? FetchedForumPostsEvent {
+        if let fetchedEvent = event as? FetchedForumPostsSuccessEvent {
             dataStorage.storeForumPosts(fromDictionaries: fetchedEvent.forumPosts)
         }
     }

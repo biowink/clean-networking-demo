@@ -1,4 +1,4 @@
-public struct FetchedForumPostsEvent: RequestEvent {
+public struct FetchedForumPostsSuccessEvent: RequestEvent {
     public let forumPosts: [[String: Any]]
 }
 
@@ -55,7 +55,7 @@ final public class FetchForumPostsRequest: HTTPClientDelegate, RequestObserving 
             return
         }
         
-        eventListenerFactory.notifyListeners(FetchedForumPostsEvent(forumPosts: forumPosts))
+        eventListenerFactory.notifyListeners(FetchedForumPostsSuccessEvent(forumPosts: forumPosts))
     }
     
     func failure(error: Error) {
