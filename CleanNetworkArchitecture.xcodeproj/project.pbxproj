@@ -33,19 +33,19 @@
 		183C35A2202C674200B3EDFE /* RequestEventListenerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3587202C674100B3EDFE /* RequestEventListenerFactory.swift */; };
 		183C35A3202C674200B3EDFE /* RequestEventListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3588202C674100B3EDFE /* RequestEventListening.swift */; };
 		183C35A4202C674200B3EDFE /* RequestObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C3589202C674100B3EDFE /* RequestObserving.swift */; };
-		183C35AA202C6DCB00B3EDFE /* ForumPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35A9202C6DCB00B3EDFE /* ForumPostsRequest.swift */; };
+		183C35AA202C6DCB00B3EDFE /* FetchForumPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35A9202C6DCB00B3EDFE /* FetchForumPostsRequest.swift */; };
 		183C35AC202C80E900B3EDFE /* FetchPostsEventListening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35AB202C80E900B3EDFE /* FetchPostsEventListening.swift */; };
-		183C35AE202C816400B3EDFE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35AD202C816400B3EDFE /* Post.swift */; };
+		183C35AE202C816400B3EDFE /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35AD202C816400B3EDFE /* ForumPost.swift */; };
 		183C35B0202C817100B3EDFE /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35AF202C817100B3EDFE /* DataStorage.swift */; };
 		183C35B5202C83EC00B3EDFE /* HTTPStatusCodeHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B1202C83EB00B3EDFE /* HTTPStatusCodeHandlingTests.swift */; };
 		183C35B6202C83EC00B3EDFE /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B2202C83EB00B3EDFE /* HTTPClientTests.swift */; };
 		183C35B7202C83EC00B3EDFE /* URLBuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B3202C83EB00B3EDFE /* URLBuildingTests.swift */; };
 		183C35B8202C83EC00B3EDFE /* DataTaskBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B4202C83EC00B3EDFE /* DataTaskBuilderTests.swift */; };
-		183C35BA202C86D600B3EDFE /* PostsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B9202C86D500B3EDFE /* PostsRequestTests.swift */; };
-		183C35BC202C871500B3EDFE /* MockHTTPClientProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35BB202C871500B3EDFE /* MockHTTPClientProvider.swift */; };
+		183C35BA202C86D600B3EDFE /* FetchForumPostsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35B9202C86D500B3EDFE /* FetchForumPostsRequestTests.swift */; };
 		183C35BE202C87F600B3EDFE /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35BD202C87F600B3EDFE /* TestUtils.swift */; };
-		183C35C0202C882400B3EDFE /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 183C35BF202C882400B3EDFE /* response.json */; };
+		183C35C0202C882400B3EDFE /* 10_mocked_posts_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 183C35BF202C882400B3EDFE /* 10_mocked_posts_response.json */; };
 		183C35C2202C88CC00B3EDFE /* malformed_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 183C35C1202C88CB00B3EDFE /* malformed_response.json */; };
+		FE8272F021BD4633005A75AF /* MockHTTPClientProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C35BB202C871500B3EDFE /* MockHTTPClientProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,18 +125,18 @@
 		183C3587202C674100B3EDFE /* RequestEventListenerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEventListenerFactory.swift; sourceTree = "<group>"; };
 		183C3588202C674100B3EDFE /* RequestEventListening.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEventListening.swift; sourceTree = "<group>"; };
 		183C3589202C674100B3EDFE /* RequestObserving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestObserving.swift; sourceTree = "<group>"; };
-		183C35A9202C6DCB00B3EDFE /* ForumPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostsRequest.swift; sourceTree = "<group>"; };
+		183C35A9202C6DCB00B3EDFE /* FetchForumPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchForumPostsRequest.swift; sourceTree = "<group>"; };
 		183C35AB202C80E900B3EDFE /* FetchPostsEventListening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsEventListening.swift; sourceTree = "<group>"; };
-		183C35AD202C816400B3EDFE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		183C35AD202C816400B3EDFE /* ForumPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
 		183C35AF202C817100B3EDFE /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		183C35B1202C83EB00B3EDFE /* HTTPStatusCodeHandlingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodeHandlingTests.swift; sourceTree = "<group>"; };
 		183C35B2202C83EB00B3EDFE /* HTTPClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
 		183C35B3202C83EB00B3EDFE /* URLBuildingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuildingTests.swift; sourceTree = "<group>"; };
 		183C35B4202C83EC00B3EDFE /* DataTaskBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskBuilderTests.swift; sourceTree = "<group>"; };
-		183C35B9202C86D500B3EDFE /* PostsRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsRequestTests.swift; sourceTree = "<group>"; };
+		183C35B9202C86D500B3EDFE /* FetchForumPostsRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchForumPostsRequestTests.swift; sourceTree = "<group>"; };
 		183C35BB202C871500B3EDFE /* MockHTTPClientProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPClientProvider.swift; sourceTree = "<group>"; };
 		183C35BD202C87F600B3EDFE /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
-		183C35BF202C882400B3EDFE /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		183C35BF202C882400B3EDFE /* 10_mocked_posts_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 10_mocked_posts_response.json; sourceTree = "<group>"; };
 		183C35C1202C88CB00B3EDFE /* malformed_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = malformed_response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,7 @@
 				183C350E202C655F00B3EDFE /* AppDelegate.swift */,
 				183C3510202C655F00B3EDFE /* ViewController.swift */,
 				183C35AB202C80E900B3EDFE /* FetchPostsEventListening.swift */,
-				183C35AD202C816400B3EDFE /* Post.swift */,
+				183C35AD202C816400B3EDFE /* ForumPost.swift */,
 				183C35AF202C817100B3EDFE /* DataStorage.swift */,
 				183C3512202C655F00B3EDFE /* Main.storyboard */,
 				183C3515202C655F00B3EDFE /* Assets.xcassets */,
@@ -235,15 +235,10 @@
 		183C3541202C65E400B3EDFE /* CleanBackendTests */ = {
 			isa = PBXGroup;
 			children = (
-				183C35B4202C83EC00B3EDFE /* DataTaskBuilderTests.swift */,
-				183C35B2202C83EB00B3EDFE /* HTTPClientTests.swift */,
-				183C35B1202C83EB00B3EDFE /* HTTPStatusCodeHandlingTests.swift */,
-				183C35B3202C83EB00B3EDFE /* URLBuildingTests.swift */,
-				183C35B9202C86D500B3EDFE /* PostsRequestTests.swift */,
-				183C35BB202C871500B3EDFE /* MockHTTPClientProvider.swift */,
+				FE8272EE21BD4607005A75AF /* HTTPClient */,
+				FE8272EF21BD4611005A75AF /* Requests */,
+				FE8272ED21BD45EB005A75AF /* Test Data */,
 				183C35BD202C87F600B3EDFE /* TestUtils.swift */,
-				183C35BF202C882400B3EDFE /* response.json */,
-				183C35C1202C88CB00B3EDFE /* malformed_response.json */,
 				183C3544202C65E400B3EDFE /* Info.plist */,
 			);
 			path = CleanBackendTests;
@@ -272,7 +267,7 @@
 			children = (
 				183C3585202C674100B3EDFE /* RequestConfiguration.swift */,
 				183C35C3202C8E9100B3EDFE /* Observing */,
-				183C35A9202C6DCB00B3EDFE /* ForumPostsRequest.swift */,
+				183C35A9202C6DCB00B3EDFE /* FetchForumPostsRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -286,6 +281,35 @@
 				183C3589202C674100B3EDFE /* RequestObserving.swift */,
 			);
 			path = Observing;
+			sourceTree = "<group>";
+		};
+		FE8272ED21BD45EB005A75AF /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				183C35BF202C882400B3EDFE /* 10_mocked_posts_response.json */,
+				183C35C1202C88CB00B3EDFE /* malformed_response.json */,
+			);
+			path = "Test Data";
+			sourceTree = "<group>";
+		};
+		FE8272EE21BD4607005A75AF /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				183C35B4202C83EC00B3EDFE /* DataTaskBuilderTests.swift */,
+				183C35B2202C83EB00B3EDFE /* HTTPClientTests.swift */,
+				183C35B1202C83EB00B3EDFE /* HTTPStatusCodeHandlingTests.swift */,
+				183C35B3202C83EB00B3EDFE /* URLBuildingTests.swift */,
+				183C35BB202C871500B3EDFE /* MockHTTPClientProvider.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		FE8272EF21BD4611005A75AF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				183C35B9202C86D500B3EDFE /* FetchForumPostsRequestTests.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,24 +407,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Clue;
 				TargetAttributes = {
 					183C350A202C655F00B3EDFE = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					183C351E202C656000B3EDFE = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 183C350A202C655F00B3EDFE;
 					};
 					183C3532202C65E300B3EDFE = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					183C353A202C65E300B3EDFE = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 183C350A202C655F00B3EDFE;
 					};
@@ -457,7 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183C35C2202C88CC00B3EDFE /* malformed_response.json in Resources */,
-				183C35C0202C882400B3EDFE /* response.json in Resources */,
+				183C35C0202C882400B3EDFE /* 10_mocked_posts_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +500,7 @@
 				183C350F202C655F00B3EDFE /* AppDelegate.swift in Sources */,
 				183C35B0202C817100B3EDFE /* DataStorage.swift in Sources */,
 				183C35AC202C80E900B3EDFE /* FetchPostsEventListening.swift in Sources */,
-				183C35AE202C816400B3EDFE /* Post.swift in Sources */,
+				183C35AE202C816400B3EDFE /* ForumPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +525,7 @@
 				183C35A2202C674200B3EDFE /* RequestEventListenerFactory.swift in Sources */,
 				183C3566202C666E00B3EDFE /* HTTPMethod.swift in Sources */,
 				183C3567202C666E00B3EDFE /* HTTPStatusCodeHandling.swift in Sources */,
-				183C35AA202C6DCB00B3EDFE /* ForumPostsRequest.swift in Sources */,
+				183C35AA202C6DCB00B3EDFE /* FetchForumPostsRequest.swift in Sources */,
 				183C356A202C666E00B3EDFE /* URLBuilding.swift in Sources */,
 				183C3564202C666E00B3EDFE /* HTTPClientError.swift in Sources */,
 				183C3565202C666E00B3EDFE /* HTTPClientProviding.swift in Sources */,
@@ -514,8 +542,8 @@
 			files = (
 				183C35B8202C83EC00B3EDFE /* DataTaskBuilderTests.swift in Sources */,
 				183C35B7202C83EC00B3EDFE /* URLBuildingTests.swift in Sources */,
-				183C35BA202C86D600B3EDFE /* PostsRequestTests.swift in Sources */,
-				183C35BC202C871500B3EDFE /* MockHTTPClientProvider.swift in Sources */,
+				183C35BA202C86D600B3EDFE /* FetchForumPostsRequestTests.swift in Sources */,
+				FE8272F021BD4633005A75AF /* MockHTTPClientProvider.swift in Sources */,
 				183C35BE202C87F600B3EDFE /* TestUtils.swift in Sources */,
 				183C35B5202C83EC00B3EDFE /* HTTPStatusCodeHandlingTests.swift in Sources */,
 				183C35B6202C83EC00B3EDFE /* HTTPClientTests.swift in Sources */,
@@ -581,6 +609,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -588,6 +617,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -638,6 +668,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -645,6 +676,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -685,7 +717,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanNetworkArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -701,7 +733,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanNetworkArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -717,7 +749,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanNetworkArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanNetworkArchitecture.app/CleanNetworkArchitecture";
 			};
@@ -734,7 +766,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanNetworkArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanNetworkArchitecture.app/CleanNetworkArchitecture";
 			};
@@ -757,7 +789,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanBackend;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -781,7 +813,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanBackend;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -798,7 +830,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanBackendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanNetworkArchitecture.app/CleanNetworkArchitecture";
 			};
@@ -814,7 +846,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.helloclue.networkdemo.CleanBackendTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanNetworkArchitecture.app/CleanNetworkArchitecture";
 			};

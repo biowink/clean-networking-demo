@@ -1,35 +1,41 @@
 import UIKit
 import CleanBackend
 
-class ViewController: UIViewController, DataStorageDelegate {
+final class ViewController: UIViewController, DataStorageDelegate {
+
     private var dataStorage = DataStorage()
-    private var postsRequest: ForumPostsRequest?
+    // A.
+    private var fetchPostsRequest: FetchForumPostsRequest?
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var userIdTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateResults()
         dataStorage.delegate = self
     }
     
+    // B.
     @IBAction func fetchPosts() {
         let config = RequestConfiguration(baseUrl: URL(string: "https://jsonplaceholder.typicode.com")!)
         let client = HTTPClient(configuration: config)
-        postsRequest = ForumPostsRequest(client: client,
-                                    eventListenerFactory: FetchedPostsEventListenerFactory(dataStorage: dataStorage))
+        let eventListenerFactory = FetchedForumPostsEventListenerFactory(dataStorage: dataStorage)
+        fetchPostsRequest = FetchForumPostsRequest(client: client, eventListenerFactory: eventListenerFactory)
         
         let userId = Int(userIdTextField.text ?? "")
-        postsRequest?.fetchPosts(userId: userId)
+        fetchPostsRequest?.fetchForumPosts(userId: userId)
     }
     
-    func dataStorageDidStorePosts() {
+    
+    // MARK: DataStorageDelegate methods
+    func dataStorageDidStoreForumPosts() {
         updateResults()
     }
     
     private func updateResults() {
-        resultLabel.text = "\(dataStorage.posts.count) posts"
+        resultLabel.text = "\(dataStorage.forumPosts.count) forum posts"
     }
 }
+
+

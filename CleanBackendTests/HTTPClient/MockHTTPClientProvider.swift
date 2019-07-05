@@ -1,6 +1,7 @@
 @testable import CleanBackend
 
 final class MockHTTPClientProvider: HTTPClientProviding {
+    
     var delegate: HTTPClientDelegate?
 
     var didPerformRequest = false
